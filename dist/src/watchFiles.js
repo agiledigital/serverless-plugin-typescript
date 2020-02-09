@@ -1,6 +1,13 @@
 "use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const typescript = require("./typescript");
+const typescript = __importStar(require("./typescript"));
 const fs_1 = require("fs");
 function watchFiles(rootFileNames, originalServicePath, cb) {
     const tsConfig = typescript.getTypescriptConfig(originalServicePath);

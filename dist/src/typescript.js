@@ -8,11 +8,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const ts = require("typescript");
-const fs = require("fs-extra");
-const _ = require("lodash");
-const path = require("path");
+const ts = __importStar(require("typescript"));
+const fs = __importStar(require("fs-extra"));
+const _ = __importStar(require("lodash"));
+const path = __importStar(require("path"));
 function makeDefaultTypescriptConfig() {
     const defaultTypescriptConfig = {
         preserveConstEnums: true,
